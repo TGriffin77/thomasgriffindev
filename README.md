@@ -1,0 +1,1 @@
+A simple portfolio for myself made with typescript and React.
