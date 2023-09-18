@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Particle from "./components/Particle";
-import MyWork from "./components/MyWork";
+import pfp from "./PFP.jpg";
 
 function Hamburger() {
   return (
@@ -26,8 +26,13 @@ function Content() {
       <section>
         <h1 className="my_name">Thomas Griffin</h1>
       </section>
+      <div className="biography">
+        <h1>ABOUT ME</h1>
+        <img src={pfp} alt="Thomas Griffin" />
+        <p></p>
+      </div>
       <section>
-        <MyWork image="" alt="" />
+        <div className="projects-container"></div>
       </section>
       <section></section>
     </div>
