@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Particle from "./components/Particle";
 import pfp from "./PFP.jpg";
+import PointerDown from "./components/PointerDown";
 
 function Hamburger() {
   return (
@@ -23,15 +24,17 @@ function SideNav() {
 function Content() {
   return (
     <div id="content">
-      <section>
+      <section className="intro">
         <h1 className="my_name">Thomas Griffin</h1>
       </section>
+      <PointerDown />
       <div className="biography">
         <h1>ABOUT ME</h1>
         <img src={pfp} alt="Thomas Griffin" />
         <p></p>
       </div>
-      <section>
+      <section className="projects">
+        <h1>PROJECTS</h1>
         <div className="projects-container"></div>
       </section>
       <section></section>
