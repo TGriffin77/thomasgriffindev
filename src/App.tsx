@@ -30,8 +30,23 @@ function Content() {
       <PointerDown />
       <div className="biography">
         <h1>ABOUT ME</h1>
+
         <img src={pfp} alt="Thomas Griffin" />
-        <p></p>
+        <p>
+          I was born and raised in the Garden State: New Jersey! I have moved
+          once I turned 18 and currently reside in Northern Florida with my
+          family. I am attending Florida Polytechnic University to receive my
+          Bachelor of Science in Computer Science. I always find myself trying
+          to fix and automate many of the problems I have in my life with
+          programming, which is why I chose to pursue further education in
+          Computer Science. Programming has been my passion for the past several
+          years and I am excited to continue to be so as I learn more through
+          school. Although programming takes up majority of my free time, I do
+          enjoy a nice adventure and exploring new places that I have never been
+          to before. I also enjoy photography and videography, especially when
+          out exploring the places that I go. I really wish to someday explore
+          the European continent and all of its beautiful geographical features.
+        </p>
       </div>
       <section className="projects">
         <h1>PROJECTS</h1>
