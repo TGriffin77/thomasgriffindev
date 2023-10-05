@@ -1,8 +1,14 @@
 import React from "react";
+
 import "./App.css";
+
 import Particle from "./components/Particle";
-import pfp from "./PFP.jpg";
 import PointerDown from "./components/PointerDown";
+import ProjectBox from "./components/ProjectBox";
+
+import pfp from "./PFP.jpg";
+import py2048 from "./py2048.png";
+import thomas from "./ThomasGriffin.png";
 
 function Hamburger() {
   return (
@@ -32,7 +38,7 @@ function Content() {
         <h1>ABOUT ME</h1>
 
         <img src={pfp} alt="Thomas Griffin" />
-        <p>
+        <p id="bio">
           I was born and raised in the Garden State: New Jersey! I have moved
           once I turned 18 and currently reside in Northern Florida with my
           family. I am attending Florida Polytechnic University to receive my
@@ -50,8 +56,43 @@ function Content() {
       </div>
       <section className="projects">
         <h1>PROJECTS</h1>
-        <div className="projects-container"></div>
+        <div className="projects-container">
+          <ProjectBox
+            src={py2048}
+            alt="Py-2048"
+            link="https://github.com/TGriffin77/Py2048"
+            description="A recreation of the famous browser game: 2048 using Python's pygame."
+          />
+          <ProjectBox
+            src={thomas}
+            alt="thomasgriffin.dev"
+            link="https://github.com/TGriffin77/thomasgriffindev"
+            description="My online portfolio website created using Typescript and React.js"
+          />
+        </div>
       </section>
+      <div className="biography">
+        <h1>CAREER</h1>
+        <p id="career">
+          Currently, I am a student attending Florida Polytechnic University
+          studying Computer Science with a concentration in software
+          engineering. Software Engineering jobs are jobs that I am mainly after
+          when looking for work. I am mainly interested in developing systems
+          and software to help me and possibly others with everyday life
+          problems. I have also been interested in the artificial intelligence
+          scene and have been studying it to incorporate it into my own
+          skillset. As a student, my main goal is to acquire a knowledge of the
+          work that a software engineer must do in the real world. I wish to
+          help significantly within the company I will be employed in and to
+          create a foundation for my own personal projects and ventures. My
+          overall professional goal for the next ten years is to receive
+          certifications in several topics related to computer science and to
+          find myself in positions that place me within a leadership role. Some
+          skills that I have learnt that may provide useful for my career
+          include: Python, Java, JavaScript, HTML and CSS, React, SQL, MongoDB,
+          and other OOP languages.
+        </p>
+      </div>
       <section></section>
     </div>
   );
