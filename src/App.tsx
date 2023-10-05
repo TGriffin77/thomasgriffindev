@@ -98,7 +98,37 @@ function Content() {
           and other OOP languages.
         </p>
       </div>
-      <section></section>
+      <section className="contact">
+        <h1>CONTACT ME</h1>
+        <div className="contact-form">
+          <form>
+            <label htmlFor="user-name">Name</label>
+            <input
+              type="text"
+              id="user-name"
+              name="name"
+              placeholder="Enter your name."
+            />
+
+            <label htmlFor="user-email">Email</label>
+            <input
+              type="email"
+              id="user-email"
+              name="email"
+              placeholder="Enter your email address."
+            />
+
+            <label htmlFor="user-subject">Subject</label>
+            <textarea
+              id="user-subject"
+              name="subject"
+              placeholder="Enter the message you would like to send."
+            ></textarea>
+
+            <input type="submit" value="Submit" id="submit"></input>
+          </form>
+        </div>
+      </section>
     </div>
   );
 }

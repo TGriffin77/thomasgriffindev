@@ -242,9 +242,6 @@ section {
   }
 }
 
-.projects {
-}
-
 .projects > h1 {
   color: white;
   text-align: center;
@@ -328,4 +325,66 @@ section {
   left: 4px;
   width: 52px;
   height: 52px;
+}
+
+.contact {
+  display: block;
+}
+
+.contact > h1 {
+  color: white;
+  text-align: center;
+  user-select: none;
+  cursor: default;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 0;
+  user-select: none;
+  font-family: "League Spartan", sans-serif;
+}
+
+.contact-form {
+  margin-top: 24px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 600px;
+  background-color: rgb(221, 221, 221);
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5em;
+  border-color: white;
+  border: 4px;
+}
+
+.contact-form > form {
+  display: block;
+  text-align: center;
+  height: 100%;
+}
+
+.contact-form > form > input,
+.contact-form > form > textarea {
+  width: 85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 2vh;
+  padding: 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact-form > form > textarea {
+  height: 300px;
+}
+
+#submit {
+  bottom: 5%;
+  font-size: 1.2em;
+  width: 20%;
 }
