@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function PointerDown() {
   return (
     <div className="pointer">

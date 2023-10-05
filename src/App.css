@@ -253,6 +253,7 @@ section {
   font-size: 2em;
   color: white;
   margin-bottom: 0;
+  user-select: none;
 }
 
 .projects-container {
@@ -281,6 +282,7 @@ section {
   padding: 0;
   margin: 12px;
   text-decoration: none;
+  user-select: none;
 }
 
 .project-box:hover {
@@ -306,13 +308,14 @@ section {
   display: inline;
   position: relative;
   background-color: white;
-  top: 10%;
+  bottom: -50%;
   left: 46%;
   transform: translateX(-50%);
   font-size: 2em;
   padding: 8px;
   border-radius: 4px;
   color: black;
+  user-select: none;
 }
 
 #resume:hover {
