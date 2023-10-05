@@ -242,6 +242,9 @@ section {
   }
 }
 
+.projects {
+}
+
 .projects > h1 {
   color: white;
   text-align: center;
@@ -253,7 +256,7 @@ section {
 }
 
 .projects-container {
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   position: relative;
   display: flex;
@@ -280,6 +283,10 @@ section {
   text-decoration: none;
 }
 
+.project-box:hover {
+  transform: scale(1.02);
+}
+
 .project-box > img {
   width: 240px;
   height: 120px;
@@ -293,4 +300,29 @@ section {
   text-decoration: none;
   color: black;
   text-align: center;
+}
+
+#resume {
+  display: inline;
+  position: relative;
+  background-color: white;
+  top: 10%;
+  left: 46%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  padding: 8px;
+  border-radius: 4px;
+  color: black;
+}
+
+#resume:hover {
+  transform: scale(1.02);
+}
+
+#resume > img {
+  position: relative;
+  top: 16px;
+  left: 4px;
+  width: 52px;
+  height: 52px;
 }

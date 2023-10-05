@@ -9,6 +9,7 @@ import ProjectBox from "./components/ProjectBox";
 import pfp from "./PFP.jpg";
 import py2048 from "./py2048.png";
 import thomas from "./ThomasGriffin.png";
+import download from "./download.png";
 
 function Hamburger() {
   return (
@@ -69,7 +70,47 @@ function Content() {
             link="https://github.com/TGriffin77/thomasgriffindev"
             description="My online portfolio website created using Typescript and React.js"
           />
+          <ProjectBox
+            src={py2048}
+            alt="Py-2048"
+            link="https://github.com/TGriffin77/Py2048"
+            description="A recreation of the famous browser game: 2048 using Python's pygame."
+          />
+          <ProjectBox
+            src={thomas}
+            alt="thomasgriffin.dev"
+            link="https://github.com/TGriffin77/thomasgriffindev"
+            description="My online portfolio website created using Typescript and React.js"
+          />
+          <ProjectBox
+            src={py2048}
+            alt="Py-2048"
+            link="https://github.com/TGriffin77/Py2048"
+            description="A recreation of the famous browser game: 2048 using Python's pygame."
+          />
+          <ProjectBox
+            src={thomas}
+            alt="thomasgriffin.dev"
+            link="https://github.com/TGriffin77/thomasgriffindev"
+            description="My online portfolio website created using Typescript and React.js"
+          />
+          <ProjectBox
+            src={py2048}
+            alt="Py-2048"
+            link="https://github.com/TGriffin77/Py2048"
+            description="A recreation of the famous browser game: 2048 using Python's pygame."
+          />
+          <ProjectBox
+            src={thomas}
+            alt="thomasgriffin.dev"
+            link="https://github.com/TGriffin77/thomasgriffindev"
+            description="My online portfolio website created using Typescript and React.js"
+          />
         </div>
+        <a id="resume" href="/Resume_Thomas_Griffin.pdf" download>
+          Resume
+          <img src={download} alt=""></img>
+        </a>
       </section>
       <div className="biography">
         <h1>CAREER</h1>
