@@ -10,6 +10,7 @@ import pfp from "./PFP.jpg";
 import py2048 from "./py2048.png";
 import thomas from "./ThomasGriffin.png";
 import download from "./download.png";
+import resume from "./Thomas_Griffin_Resume.pdf";
 
 function Hamburger() {
   return (
@@ -71,7 +72,7 @@ function Content() {
             description="My online portfolio website created using Typescript and React.js"
           />
         </div>
-        <a id="resume" href="../public/Resume_Thomas_Griffin.pdf" download>
+        <a id="resume" href={resume} download="Thomas_Griffin_Resume.pdf">
           Resume
           <img src={download} alt=""></img>
         </a>
