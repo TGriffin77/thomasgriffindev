@@ -72,9 +72,11 @@ function Content() {
             description="My online portfolio website created using Typescript and React.js"
           />
         </div>
-        <a id="resume" href={resume} download="Thomas_Griffin_Resume.pdf">
-          Resume
-          <img src={download} alt=""></img>
+        <a href={resume} download="Thomas_Griffin_Resume.pdf">
+          <div id="resume">
+            Resume
+            <img src={download} alt=""></img>
+          </div>
         </a>
       </section>
       <div className="biography">

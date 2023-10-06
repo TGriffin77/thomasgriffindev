@@ -242,6 +242,12 @@ section {
   }
 }
 
+.projects {
+  display: block;
+  position: relative;
+  height: 900px;
+}
+
 .projects > h1 {
   color: white;
   text-align: center;
@@ -254,16 +260,13 @@ section {
 }
 
 .projects-container {
-  top: 40%;
-  transform: translateY(-50%);
-  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: left;
-  row-gap: 2.6vh;
+  row-gap: 1.25vh;
   column-gap: 1.25vw;
-  margin: 0 32px 0 32px;
+  margin: 32px 32px 24px 32px;
   max-height: 80%;
   overflow: hidden;
   outline: 5px dotted white;
@@ -280,10 +283,11 @@ section {
   margin: 12px;
   text-decoration: none;
   user-select: none;
+  transition: all 0.5s ease;
 }
 
 .project-box:hover {
-  transform: scale(1.02);
+  transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
 .project-box > img {
@@ -302,21 +306,18 @@ section {
 }
 
 #resume {
-  display: inline;
-  position: relative;
+  position: absolute;
   background-color: white;
-  bottom: -50%;
-  left: 46%;
-  transform: translateX(-50%);
   font-size: 2em;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   color: black;
   user-select: none;
-}
-
-#resume:hover {
-  transform: scale(1.02);
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 52px;
+  border: 2px solid gray;
 }
 
 #resume > img {
