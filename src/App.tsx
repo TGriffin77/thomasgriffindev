@@ -11,6 +11,7 @@ import py2048 from "./py2048.png";
 import thomas from "./ThomasGriffin.png";
 import download from "./download.png";
 import resume from "./Thomas_Griffin_Resume.pdf";
+import linkedin from "./linkedin.png";
 
 function Hamburger() {
   return (
@@ -18,14 +19,6 @@ function Hamburger() {
       <input type="checkbox" id="toggle" />
       <label htmlFor="toggle" id="hamburger"></label>
     </div>
-  );
-}
-
-function SideNav() {
-  return (
-    <nav className="sidenav">
-      {/* Make the nav 30% of the screen, with a minimum of 420px */}
-    </nav>
   );
 }
 
@@ -84,13 +77,14 @@ function Content() {
         <p id="career">
           Currently, I am a student attending Florida Polytechnic University
           studying Computer Science with a concentration in software
-          engineering. Software Engineering jobs are jobs that I am mainly after
-          when looking for work. I am mainly interested in developing systems
-          and software to help me and possibly others with everyday life
-          problems. I have also been interested in the artificial intelligence
-          scene and have been studying it to incorporate it into my own
-          skillset. As a student, my main goal is to acquire a knowledge of the
-          work that a software engineer must do in the real world. I wish to
+          engineering. I also currently am a Teacher's Assistant for Chemistry
+          classes and math classes. Software Engineering jobs are jobs that I am
+          mainly after when looking for work. I am mainly interested in
+          developing systems and software to help me and possibly others with
+          everyday life problems. I have also been interested in the artificial
+          intelligence scene and have been studying it to incorporate it into my
+          own skillset. As a student, my main goal is to acquire a knowledge of
+          the work that a software engineer must do in the real world. I wish to
           help significantly within the company I will be employed in and to
           create a foundation for my own personal projects and ventures. My
           overall professional goal for the next ten years is to receive
@@ -131,6 +125,15 @@ function Content() {
             <input type="submit" value="Submit" id="submit"></input>
           </form>
         </div>
+        <div className="socials">
+          <a
+            href="https://www.linkedin.com/in/thomas-griffin-899117252/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedin} alt="linkedin" id="linkedin" />
+          </a>
+        </div>
       </section>
     </div>
   );
@@ -140,7 +143,6 @@ function App() {
   return (
     <div>
       <Hamburger />
-      <SideNav />
       <Content />
       <Particle />
     </div>

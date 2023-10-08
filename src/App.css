@@ -330,6 +330,7 @@ section {
 
 .contact {
   display: block;
+  height: 900px;
 }
 
 .contact > h1 {
@@ -358,6 +359,7 @@ section {
   font-size: 1.5em;
   border-color: white;
   border: 4px;
+  min-width: 500px;
 }
 
 .contact-form > form {
@@ -388,4 +390,24 @@ section {
   bottom: 5%;
   font-size: 1.2em;
   width: 164px;
+}
+
+#submit:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+}
+
+.socials {
+  display: flex;
+  margin-top: 72px;
+  align-items: left;
+  justify-content: center;
+}
+
+.socials > *:hover {
+  transform: translate3D(0, -1px, 0) scale(1.03);
+}
+
+#linkedin {
+  height: 64px;
+  border-radius: 4px;
 }
