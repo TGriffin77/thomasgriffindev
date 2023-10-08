@@ -7,11 +7,30 @@ import PointerDown from "./components/PointerDown";
 import ProjectBox from "./components/ProjectBox";
 
 import pfp from "./PFP.jpg";
-import py2048 from "./py2048.png";
-import thomas from "./ThomasGriffin.png";
+// import py2048 from "./py2048.png";
+// import thomas from "./ThomasGriffin.png";
 import download from "./download.png";
 import resume from "./Thomas_Griffin_Resume.pdf";
 import linkedin from "./linkedin.png";
+
+const projectsData = [
+  {
+    name: "py2048",
+    src: "./py2048.png",
+    alt: "Py-2048",
+    link: "https://github.com/TGriffin77/Py2048",
+    description:
+      "A recreation of the famous browser game: 2048 using Python's pygame.",
+  },
+  {
+    name: "thomasgriffindev",
+    src: "./ThomasGriffin.png",
+    alt: "thomasgriffin.dev",
+    link: "https://github.com/TGriffin77/thomasgriffindev",
+    description:
+      "My online portfolio website created using Typescript and React.js",
+  },
+];
 
 function Hamburger() {
   return (
@@ -29,7 +48,7 @@ function Content() {
         <h1 className="my_name">Thomas Griffin</h1>
       </section>
       <PointerDown />
-      <div className="biography">
+      <div className="biography" id="aboutme">
         <h1>ABOUT ME</h1>
 
         <img src={pfp} alt="Thomas Griffin" />
@@ -52,18 +71,14 @@ function Content() {
       <section className="projects">
         <h1>PROJECTS</h1>
         <div className="projects-container">
-          <ProjectBox
-            src={py2048}
-            alt="Py-2048"
-            link="https://github.com/TGriffin77/Py2048"
-            description="A recreation of the famous browser game: 2048 using Python's pygame."
-          />
-          <ProjectBox
-            src={thomas}
-            alt="thomasgriffin.dev"
-            link="https://github.com/TGriffin77/thomasgriffindev"
-            description="My online portfolio website created using Typescript and React.js"
-          />
+          {projectsData.map((project) => (
+            <ProjectBox
+              src={require(`${project.src}`)}
+              alt={project.alt}
+              link={project.link}
+              description={project.description}
+            />
+          ))}
         </div>
         <a href={resume} download="Thomas_Griffin_Resume.pdf">
           <div id="resume">

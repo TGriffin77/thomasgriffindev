@@ -1,5 +1,9 @@
 function SideNav(props: any) {
-  return <div></div>;
+  return (
+    <div className="sidenav">
+      <a href="#aboutme"></a>
+    </div>
+  );
 }
 
 export default SideNav;
