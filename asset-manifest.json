@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.edbfaedf.css",
-    "main.js": "/static/js/main.d40f0ef1.js",
+    "main.css": "/static/css/main.a1423fe9.css",
+    "main.js": "/static/js/main.26e2c2cf.js",
     "static/js/787.d9e6e751.chunk.js": "/static/js/787.d9e6e751.chunk.js",
     "static/media/PFP.jpg": "/static/media/PFP.68a2577d5a6b538a9db7.jpg",
     "static/media/py2048.png": "/static/media/py2048.c0fea355b75abe4c96c9.png",
     "static/media/Thomas_Griffin_Resume.pdf": "/static/media/Thomas_Griffin_Resume.360cc1700f54134e4132.pdf",
     "static/media/ThomasGriffin.png": "/static/media/ThomasGriffin.d2c7a64fc529e106b750.png",
     "index.html": "/index.html",
-    "main.edbfaedf.css.map": "/static/css/main.edbfaedf.css.map",
-    "main.d40f0ef1.js.map": "/static/js/main.d40f0ef1.js.map",
+    "main.a1423fe9.css.map": "/static/css/main.a1423fe9.css.map",
+    "main.26e2c2cf.js.map": "/static/js/main.26e2c2cf.js.map",
     "787.d9e6e751.chunk.js.map": "/static/js/787.d9e6e751.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edbfaedf.css",
-    "static/js/main.d40f0ef1.js"
+    "static/css/main.a1423fe9.css",
+    "static/js/main.26e2c2cf.js"
   ]
 }
